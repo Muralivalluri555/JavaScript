@@ -127,3 +127,42 @@
 // const cFun = (a, b) => a + b;
 
 // console.log(cFun(10, 5));
+
+//Day 3
+//  Browser - BOM
+//     Document - DOM
+//         console
+//             log
+
+// let heading = document.getElementsByTagName("h1");
+
+//console.log(heading);
+
+// heading[0].innerText = "welcome Riya";
+
+// let para = document.getElementById("para");
+
+// para.innerText = "Lorem vadhu kani edhi chalu";
+// para.innerHTML = "<s>Strike chesa em anukoku</s>";
+
+// let hola = document.getElementsByClassName("hola");
+// hola[0].innerHTML = "<s>Strike it </s>";
+let display;
+const change = () => {
+  display = document.getElementById("display");
+  display.innerText = "bye";
+  display.style.backgroundColor = "powderBlue";
+  display.style.color = "red";
+  display.style.marginRight = "90%";
+};
+const change1 = () => {
+  let dis = document.getElementById("display");
+  let letter = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+  let color = "#";
+
+  for (let i = 0; i < 6; i++) {
+    color += letter[Math.floor(Math.random() * 16)];
+  }
+
+  dis.style.backgroundColor = color;
+};
